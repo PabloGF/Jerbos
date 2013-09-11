@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo fswebcam -d /dev/video0 -r 640x480 /home/pi/jerbos.JPG && adjuntarFoto.py && adjuntarFotoAntia.py
+
