@@ -4,4 +4,4 @@ temperatura='temp'
 
 SUBJECT="Temperatura de los bichos: ${temperatura}"
 
-'echo' | mutt -a /home/pi/jerbos.JPG -s "'echo ${SUBJECT}'" -- RasPiPablo.5571@twitpic.com
+echo "" | mutt -a /home/pi/jerbos.JPG -s "${SUBJECT}" -- RasPiPxxxx.xxxx@twitpic.com
