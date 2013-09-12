@@ -1,0 +1,7 @@
+#!/bin/sh
+
+temperatura='temp'
+
+SUBJECT="Temperatura de los bichos: ${temperatura}$"
+
+mutt -a /home/pi/jerbos.JPG -s "'echo ${SUBJECT}'" -- RasPixxxxx.xxxx@twitpic.com
