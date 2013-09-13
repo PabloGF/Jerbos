@@ -1,0 +1,29 @@
+Este sistema de monitorización funciona de manera muy intuitiva.
+
+-------------------------------------------------------
+Se compone de:
+
+	Raspberry Pi
+	DS18b20 <-sensor de temperatura
+	Play Station 3 Eye <- WebCam bonita y barata
+	
+Muy pronto (Si BangGood se digna)
+
+	HC-SR04 aka 'murciélago' <- Medidor de distancias con ultrasonidos
+--------------------------------------------------------  
+
+Si sabes cómo enchufar las cosas, debería funcionar 'out of the box' si:
+
+-copias 'tweet', 'foto' y 'temp' en un directorio de 'echo $PATH'. (p.ej. /usr/bin) 
+
+-les das permisos de ejecución (sudo chmod +x <file>)
+
+-pones a 'tweet' en tu /etc/crontab <- Cómo? Google es tu amigo.
+
+-instalas mutt en la raspberry y te haces una cuenta en twittpic
+
+-has visto un ordenador antes
+
+--------------------------------------------------------
+
+Continuaré ASAP
