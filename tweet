@@ -1,7 +1,9 @@
 #!/bin/sh
 
-temperatura='temp'
+foto
 
-SUBJECT="Temperatura de los bichos: ${temperatura}"
+TPR=`temp`
+
+SUBJECT="Temperatura de los bichos: ${TPR}'C"
 
 echo "" | mutt -a /home/pi/jerbos.JPG -s "${SUBJECT}" -- RasPiPxxxx.xxxx@twitpic.com
