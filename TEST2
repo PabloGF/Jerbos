@@ -1,0 +1,11 @@
+#!/bin/sh
+
+python /usr/bin/flashON
+
+TPR=`temp`
+
+SUBJECT="THIS IS A TEST. Temperatura de los bichos: ${TPR}'C (2/2)"
+
+echo "" | mutt -a /home/pi/jerbos1.JPG -s "${SUBJECT}" -- RasPiPablo.XXXX@twitpic.com
+
+python /usr/bin/flashOFF

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#python /usr/bin/flashON
+
+TPR=`temp`
+
+SUBJECT="(Foto de hace 1 hora)[Comedor-Gimnasio]"
+
+echo "" | mutt -a /home/pi/jerbos1.JPG -s "${SUBJECT}" -- RasPiPablo.XXXX@twitpic.com
+
+#python /usr/bin/flashOFF

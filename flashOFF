@@ -1,0 +1,23 @@
+#!/usr/bin/python
+
+
+#flashOFF
+
+
+import serial
+
+arduino = serial.Serial('/dev/ttyACM0', 9600)
+
+print("Escribiendo tweet...")
+
+while True:
+    comando = 'L' #Input
+    arduino.write(comando) #Mandar un comando hacia Arduino
+    if comando == 'L':
+        print('LED APAGADO')
+    elif comando == 'L':
+        print('LED APAGADO')
+    break
+arduino.close() #Finalizamos la comunicacion
+
+pass
