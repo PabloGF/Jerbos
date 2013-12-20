@@ -9,7 +9,7 @@ import commands
 
 arduino = serial.Serial('/dev/ttyACM0', 9600)
 
-print("Hablando con Leonardo")
+print("Hablando con Duino")
 
 while True:
     comando = 'H' #Input

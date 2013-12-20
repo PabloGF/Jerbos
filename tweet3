@@ -2,10 +2,6 @@
 
 #python /usr/bin/flashON
 
-TPR=`temp`
-
-SUBJECT="[Comedor-Gimnasio]"
-
-echo "" | mutt -a /home/pi/jerbos1.JPG -s "${SUBJECT}" -- RasPiPablo.XXXX@twitpic.com
+python /usr/bin/tuitFoto1.py
 
 #python /usr/bin/flashOFF

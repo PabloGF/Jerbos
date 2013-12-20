@@ -4,6 +4,7 @@
 // notes in the melody:
 
 int led = 13;
+int piloto = 3;
 
 int melody[] = {
   NOTE_A7,0, NOTE_A7,0,NOTE_A7,0,NOTE_A7,0,NOTE_A7,0,NOTE_A7,0,NOTE_A7,0};
@@ -14,7 +15,8 @@ int noteDurations[] = {
 
 void setup() {
   
-  pinMode(led, OUTPUT);
+  pinMode(led,OUTPUT);
+  pinMode(piloto,OUTPUT);
   Serial.begin(9600);
   
   // iterate over the notes of the melody:
@@ -26,7 +28,7 @@ void setup() {
 
 
 void loop () {
-  if (Serial.available()) { //Si estÃ¡ disponible
+  if (Serial.available()) { //Si está disponible
     char c = Serial.read(); //Guardamos la lectura en una variable char
     if (c == 'H') { //Si es una 'H', enciendo el LED
       
@@ -46,10 +48,16 @@ void loop () {
     noTone(8);
     
   }
-      digitalWrite(led, HIGH);tw
-    } else if (c == 'L') { //Si es una 'L', apago el LED
+      digitalWrite(led, HIGH);
+    } 
+    if (c == 'L') { //Si es una 'L', apago el LED
       digitalWrite(led, LOW);
+    }
+    if (c == 'W') { //Si es una 'W', enciendo calefaccion y piloto indicativo
+      digitalWrite(piloto, HIGH);
+    }
+    if (c == 'S') { //Si es una 'S', apago la calefaccion
+      digitalWrite(piloto, LOW);
     }
   }
 }
-

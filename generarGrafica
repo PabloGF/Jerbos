@@ -1,0 +1,9 @@
+set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 500, 350 
+set output 'temp.png'
+#set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"white" behind
+set yrange [5:40]
+set style fill   solid 1.00 noborder
+set style data lines
+set title "Así hemos pasado la noche" 
+# set xrange [ 250.000 : 500.000 ] noreverse nowriteback
+plot 'data.dat' u 1:3:4 w filledcurves above title 'Asándonos','' u 1:3:2 w filledcurves below title 'Pelete', '' u 1:4 w line lt -1 lw 2 title 'maxTemp',  '' u 1:2 w lines lt 3 lw 2 title 'minTemp', '' u 1:3 lt 8 lw 2 title 'Temp'

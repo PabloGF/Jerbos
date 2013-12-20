@@ -2,10 +2,6 @@
 
 python /usr/bin/flashON
 
-TPR=`temp`
-
-SUBJECT="Temperatura de los bichos: ${TPR}'C"
-
-echo "" | mutt -a /home/pi/jerbos.JPG -s "${SUBJECT}" -- RasPiPablo.XXXX@twitpic.com
+python /usr/bin/tuitFoto.py
 
 python /usr/bin/flashOFF

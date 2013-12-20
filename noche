@@ -1,0 +1,15 @@
+#!/bin/sh
+
+TARDE="0"
+TARDEPLUS="1"
+PRONTO="8"
+HORA=`date +%H`
+
+if [ ${HORA} -eq ${TARDE} ];
+then echo `date +%H` 19 `temp` 24 > data.dat
+fi
+if [ ${HORA} -lt ${PRONTO} ] || [ ${HORA} -gt ${TARDEPLUS} ];
+then echo `date +%H` 19 `temp` 24 >> data.dat
+fi
+
+
